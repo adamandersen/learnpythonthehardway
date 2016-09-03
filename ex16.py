@@ -37,5 +37,5 @@ target.write(line3);
 target.write("\n");
 # user information
 print "And finally, we close it"
-# close the file so it won't corrupt the file
+# close the file so it won't corrupt the file new comment
 target.close
