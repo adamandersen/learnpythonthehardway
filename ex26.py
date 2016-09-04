@@ -87,4 +87,4 @@ sorted_words = sort_sentence(sentence)
 print sorted_words
 
 print_first_and_last(sentence)
-print_first_a_last_sorted(senence)
+print_first_and_last_sorted(sentence)
