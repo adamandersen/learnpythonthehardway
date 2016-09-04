@@ -28,6 +28,7 @@ iq = divide(100, 2);
 
 print "Age: %d, Height: %d, Weight: %d" % (age, height, weight);
 
+
 # A puzzel for the extra credit, tyoe in anyway
 print "Here is a puzzle.";
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
