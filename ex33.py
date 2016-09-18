@@ -8,4 +8,4 @@ def loop_throug(change_num):
         print "Numbers now: ", numbers
         print "At the bottom i is %d" % i
 
-print "The numbers: %r " % loop_throug(1)
+print "The numbers: %r " % loop_throug(6)
