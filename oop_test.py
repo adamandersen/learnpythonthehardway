@@ -2,6 +2,23 @@
 import random, sys
 from urllib import urlopen
 
+# colors
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
+    def disable(self):
+        self.HEADER = ''
+        self.OKBLUE = ''
+        self.OKGREEN = ''
+        self.WARNING = ''
+        self.FAIL = ''
+        self.ENDC = ''
+
 WORD_URL = "http://learnpythonthehardway.org/words.txt"
 WORDS = []
 
@@ -19,6 +36,9 @@ PHRASES = {
     "***.*** = '***'":
       "From *** get the *** attribute and set it to '***'."
 }
+
+
+
 
 # do they want to drill phrases first
 if len(sys.argv) == 2 and sys.argv[1] == "english":
@@ -69,9 +89,9 @@ try:
             if PHRASES_FIRST:
                 question, answer = answer, question
 
-            print question
+            print (bcolors.WARNING + question)
 
             raw_input("> ")
-            print "ANSER: %s\n\n" % answer
+            print (bcolors.OKBLUE + "ANWSER: %s\n\n" % answer )
 except EOFError:
     print "\nBye"
