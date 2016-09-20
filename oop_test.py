@@ -90,8 +90,9 @@ try:
                 question, answer = answer, question
 
             print (bcolors.WARNING + question)
+            print (bcolors.HEADER + "Press CTRL+D to exit")
 
-            raw_input("> ")
-            print (bcolors.OKBLUE + "ANWSER: %s\n\n" % answer )
+            raw_input(bcolors.OKGREEN + "> " )
+            print (bcolors.FAIL + "ANWSER: %s\n\n" % answer )
 except EOFError:
     print "\nBye"
